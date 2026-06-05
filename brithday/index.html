@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday 🎉</title>
+
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb);
+      background-size: 600% 600%;
+      animation: bgMove 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: white;
+      padding: 35px;
+      border-radius: 25px;
+      max-width: 650px;
+      text-align: center;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card animate__animated animate__zoomIn">
+
+    <!-- FOTO -->
+    <img src="foto.jpg" class="animate__animated animate__pulse animate__infinite" alt="Foto Ulang Tahun">
+
+    <!-- JUDUL -->
+    <h1 class="animate__animated animate__bounce">
+      🎉 Selamat Ulang Tahun ke-19 🎉
+    </h1>
+
+    <h2 class="animate__animated animate__fadeInUp">
+      M. Dito Rahmadiansyah
+    </h2>
+
+    <p><i>10 Juni 2007</i></p>
+
+    <!-- TEKS PANJANG -->
+    <p class="animate__animated animate__fadeInUp animate__delay-1s">
+      Hari ini adalah hari spesial untukmu. Bertambahnya usia bukan hanya soal angka,
+      tapi tentang bagaimana kamu tumbuh, belajar, dan terus melangkah maju.
+      Aku ikut bahagia melihat perjalanan yang sudah kamu lalui sampai sejauh ini.
+    </p>
+
+    <p class="animate__animated animate__fadeInUp animate__delay-2s">
+      Mendengar kabar bahwa kamu sedang mempersiapkan diri untuk seleksi tingkat pusat TNI,
+      jujur aku sangat bangga. Semua latihan, disiplin, dan perjuanganmu selama ini
+      pasti membawa hasil terbaik. Semoga setiap tahap seleksi berjalan lancar,
+      fisik dan mentalmu selalu dikuatkan, dan seragam kebanggaan itu segera kamu pakai.
+    </p>
+
+    <p class="animate__animated animate__fadeInUp animate__delay-3s">
+      Tentang hal-hal yang sempat terasa canggung di antara kita,
+      mari kita jadikan hari ini sebagai awal yang baik.
+      Aku menghargai kejujuranmu, dan bagiku,
+      melihatmu bahagia dan sukses mengejar mimpi sudah lebih dari cukup.
+    </p>
+
+    <!-- LAGU -->
+    <audio controls class="animate__animated animate__fadeIn animate__delay-4s">
+      <source src="lagu.mp3" type="audio/mpeg">
+      Browser kamu tidak mendukung audio.
+    </audio>
+
+    <div class="footer animate__animated animate__fadeIn animate__delay-5s">
+      <strong>Happy Birthday 🎂</strong><br>
+      Stay healthy & keep fighting 💪
+    </div>
+
+  </div>
+
+</body>
+</html>
